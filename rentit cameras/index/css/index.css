@@ -1,0 +1,947 @@
+
+html{scroll-behavior: smooth
+    ;}
+  
+nav {
+    background-color: #33a8b8; /* Blue color */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 50px;
+}
+nav a:hover{transform:rotate(1.2) ;
+transition: all 0.3s;}
+/* Simple text logo */
+.logo {
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    margin-left: 2px;
+position: absolute;
+}
+
+.banner {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+   right: 20px;
+ margin-left: 500px;
+    
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin:  10px;
+    font-size: 30px;
+}
+
+/* Navigation links hover effect */
+nav a:hover {
+    text-decoration: underline;
+    color: black
+}
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f0f0f0;
+}
+
+/* Form styling */
+.booking-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  #33a8b8;
+    text-align: center;
+}
+/* boooking button */
+/* Styled Button */
+.button {
+    background-color: #ce67a3;  /* Button color */
+    color: white;               /* Text color */
+    border: none;               /* Remove default border */
+    padding: 15px 30px;         /* Padding for the button */
+    font-size: 16px;            /* Text size */
+    font-weight: bold;          /* Bold text */
+    border-radius: 25px;        /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+     align-items: ;
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background-color: #2b8f9b;  /* Darker shade of cyan on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Deeper shadow on hover */
+}
+
+/* Button Focus (when clicked or keyboard focus) */
+.button:focus {
+    outline: none;  /* Remove default focus outline */
+    background-color: #24939d;  /* Slightly darker color when focused */
+}
+
+/* Input styles */
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px;
+}
+
+input[type="datetime-local"]:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue when focused */
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Label */
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+
+h1{background-color: #25aeb3;
+display: inline-flex;}
+
+.category {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Equipment listing */
+.item-list {
+    list-style-type: none;
+}
+
+.item-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.item-list li:before {
+    content: "📷"; /* Icon for each item */
+    margin-right: 10px;
+}
+
+/* Specific icons for categories */
+.cameras li:before {
+    content: "📷"; /* Camera icon */
+}
+
+.drones li:before {
+    content: "🛸"; /* Drone icon */
+}
+
+.lights li:before {
+    content: "💡"; /* Light icon */
+}
+
+.gimbals li:before {
+    content: "🤳"; /* Gimbal icon */
+}
+
+.lenses li:before {
+    content: "🔍"; /* Lens icon */
+}
+.cameras{
+    display:inline-flex;
+    justify-content: space-between;
+}
+.light{
+    display: inline-block;
+    justify-content: space-between;
+
+
+}
+.eqipments{margin: 100px;}
+
+    /* foooter  */
+    /* Footer Section */
+footer {
+    
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+/* Footer Contact Section */
+.footer-contact {
+    flex: 1;
+    bottom: 0;
+}
+
+.footer-contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+/* Footer Bottom Section 1 */
+            .style-0 {
+                background-color: #33a8b8;
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                position: relative;
+                bottom: 0px;
+                min-height: 200px;
+                max-height: max-content;
+                justify-content: space-evenly;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-1 {
+                flex-wrap: wrap;
+                width: 80%;
+                height: 280px;
+                justify-content: space-around;
+                align-items: start;
+                display: flex;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-2 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 10px;
+                min-width: 180px;
+                height: 280px;
+                flex: 1 1 0%;
+                flex-direction: column;
+                margin: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-3 {
+                font-weight: 300;
+                border-bottom: 3px solid rgb(237, 237, 241);
+                margin-bottom: 20px;
+                padding: 10px 0px;
+                font-size: 24px;
+                margin: 0px 0px 20px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-4 {
+                align-items: flex-start;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-5 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-6 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-7 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-8 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-9 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-10 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-11 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-12 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-13 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-14 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-15 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 10px;
+                min-width: 180px;
+                height: 280px;
+                flex: 1 1 0%;
+                flex-direction: column;
+                margin: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-16 {
+                font-weight: 300;
+                border-bottom: 3px solid rgb(237, 237, 241);
+                margin-bottom: 20px;
+                padding: 10px 0px;
+                font-size: 24px;
+                margin: 0px 0px 20px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-17 {
+                align-items: flex-start;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-18 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-19 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-20 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-21 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-22 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-23 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-24 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-25 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-26 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-27 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-28 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 10px;
+                min-width: 180px;
+                height: 280px;
+                flex: 1 1 0%;
+                flex-direction: column;
+                margin: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-29 {
+                font-weight: 300;
+                border-bottom: 3px solid rgb(237, 237, 241);
+                margin-bottom: 20px;
+                padding: 10px 0px;
+                font-size: 24px;
+                margin: 0px 0px 20px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-30 {
+                align-items: flex-start;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-31 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-32 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-33 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-34 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-35 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-36 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-37 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-38 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-39 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-40 {
+                text-decoration: none solid rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-41 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 10px;
+                min-width: 180px;
+                height: 280px;
+                flex: 1 1 0%;
+                flex-direction: column;
+                margin: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-42 {
+                font-weight: 300;
+                border-bottom: 3px solid rgb(237, 237, 241);
+                margin-bottom: 20px;
+                padding: 10px 0px;
+                font-size: 24px;
+                margin: 0px 0px 20px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-43 {
+                flex-direction: column;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-44 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                width: 100%;
+                align-items: flex-start;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-45 {
+                width: 100%;
+                color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none solid rgb(255, 255, 255);
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-46 {
+                width: 20pxmargin:0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+                margin: 0px;
+            }
+        
+            .style-47 {
+                list-style: outside none none;
+                font-weight: 200;
+                font-size: 16px;
+                padding-bottom: 15px;
+                cursor: pointer;
+                width: 100%;
+                align-items: flex-start;
+                margin: 0px;
+                padding: 0px 0px 15px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-48 {
+                width: 100%;
+                color: rgb(255, 255, 255);
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none solid rgb(255, 255, 255);
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-49 {
+                width: 20pxmargin:0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+                margin: 0px;
+            }
+        
+            .style-50 {
+                mix-blend-mode: screen;
+                padding-top: 30px;
+                gap: 20px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                padding: 30px 0px 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-51 {
+                text-decoration: none solid rgb(0, 0, 0);
+                color: rgb(0, 0, 0);
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-52 {
+                width: 40px;
+                height: 40px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-53 {
+                text-decoration: none solid rgb(0, 0, 0);
+                color: rgb(0, 0, 0);
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-54 {
+                width: 40px;
+                height: 40px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-55 {
+                text-decoration: none solid rgb(0, 0, 0);
+                color: rgb(0, 0, 0);
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+        
+            .style-56 {
+                width: 40px;
+                height: 40px;
+                margin: 0px;
+                padding: 0px;
+                font-family: Mulish, sans-serif;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+     
